@@ -14,7 +14,7 @@ const initialState = {
   bio: null
 };
 
-const initStore = () => {
+const initStore = (initialState) => {
   return createStore(user, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)));
 };
 
